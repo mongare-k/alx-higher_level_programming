@@ -10,8 +10,9 @@ class Square:
     """Class Square that has attributes. Instantiation with size
 
     Attributes:
-        size: The size of the square
+        size (int): The size of the square
     """
+
     def __init__(self, size=0):
         """The __init__ method for Square class
 
@@ -28,3 +29,11 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    def area(self):
+        """Calculates the area of the square
+
+        Returns:
+            The square area
+        """
+        return self.__size ** 2
